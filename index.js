@@ -128,7 +128,7 @@ function displayForm(item) {
   const phoneLabel = document.createElement('label');
   phoneLabel.textContent = 'Phone Number:';
   const phoneInput = document.createElement('input');
-  phoneInput.type = 'tel';
+  phoneInput.type = 'number';
   phoneInput.name = 'phone';
   phoneLabel.appendChild(phoneInput);
   form.appendChild(phoneLabel);
@@ -154,6 +154,41 @@ function displayForm(item) {
   form.appendChild(submitButton);
 
   container.appendChild(form);
+}
+   
+
+
+
+// Slideshow 1
+var slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  var i;
+  var slides = document.querySelectorAll("#slideshow-container-1 .slideshow-container__img");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides.length) {slideIndex1 = 1}
+  slides[slideIndex1-1].style.display = "block";
+  setTimeout(showSlides1, 4000); // Change image every 2 seconds
+}
+
+// Slideshow 2
+var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+  var i;
+  var slides = document.querySelectorAll("#slideshow-container-2 .slideshow-container__img");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides.length) {slideIndex2 = 1}
+  slides[slideIndex2-1].style.display = "block";
+  setTimeout(showSlides2, 3000); // Change image every 3 seconds
 }
 
 
