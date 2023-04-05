@@ -84,16 +84,16 @@ a:hover {
 }
 
 .image-container {
-  flex-basis: 70%; /* make each image container occupy 50% of the available width */
+  flex-basis: 100%; /* make each image container occupy 50% of the available width */
 }
 .image-containerr{
-  flex-basis: 70%; /* make each image container occupy 50% of the available width */
+  flex-basis: 100%; /* make each image container occupy 50% of the available width */
    height: 100%;
 }
 
 .slideshow-container__img {
   width: 100%; /* make the images fill their respective containers */
-  height: auto; /* maintain the aspect ratio of the images */
+  height: 690px; /* maintain the aspect ratio of the images */
 }
 
 
@@ -102,7 +102,7 @@ a:hover {
  
 
  #hhh{
-  margin-top: 200px;
+  margin-top: 0px;
  }
 .main__title {
   flex: 1;
@@ -149,7 +149,7 @@ ol li {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  
 }
 
 .how-section h2 {
@@ -179,9 +179,7 @@ ol li {
   margin-right: 20px;
 }
 
-.how-section {
-  margin: 0;
-}
+
  
  
  
@@ -446,3 +444,9 @@ button:hover {
     transform: rotate(180deg);
   }
    
+
+  .h-p{
+    border-radius: 500px;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
