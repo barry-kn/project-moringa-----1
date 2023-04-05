@@ -1,0 +1,353 @@
+ /* Reset styles */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Typography */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #333;
+    margin-top: 78px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  /* Navigation bar styles */
+  header {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    ul {
+      margin-top: 20px;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  }
+  
+  .main{
+    width: 678px;
+   
+  
+  }
+  .main__title {
+    font-size: 36px; /* Adjust the font size of the title */
+  }
+  
+  .image-container {
+    width: 900px; /* Set the width of the container to 100% */
+    height:  900px; /* Set the height of the container to 100% of the viewport height */
+    display: flex; /* Use flexbox layout to center the images and title vertically */
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+    margin-right: 600px;
+   
+  }
+  
+  .image-container__img { 
+    width:  100%; /* Set the width of the images to auto */
+    height: 100%; /* Set the maximum height of the images to 100% of the container height */
+  }
+  
+  
+  
+   
+  
+   
+  .main__title {
+    flex: 1;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 16px;
+    background-color: #0e5398;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0 0 0 1.5em;
+  }
+  
+  ol li {
+    margin-bottom: 1em;
+  }
+  .why-section {
+     
+    background-color: rgb(233, 186, 16);
+    font-size: 26px;
+    height: 99px;
+  }
+  
+  .how-section {
+    background-color: rgb(239, 232, 11);
+    border-radius: 50%;
+    padding: 10px;
+    width: 950px;
+    height: 740px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .how-section h2 {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .how-section ol {
+    list-style-type: decimal;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  .containerr {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container img {
+    margin-right: 20px;
+  }
+  
+  .how-section {
+    margin: 0;
+  }
+  .arr2{
+    width: 578px;
+  }
+   
+  .arrr3{
+    width: 578px;
+  }
+  
+  
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    
+  }
+  
+  .benefits {
+    background-color: rgb(248, 186, 14);
+    border-radius: 50%;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .benefits h2 {
+    margin: 0;
+  }
+  
+  .benefits .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .benefits ol {
+    list-style-type: decimal;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 50px;
+  }
+  
+  .div-imtg{
+    margin-right: 520px;
+    margin-top: 178px;
+  }
+  
+  
+  .h222{
+    margin-top: 186px;
+   margin-bottom: 0px;
+    color: white;
+  }
+  .divh2{
+    text-align: center;
+    background-color: #0e5398;
+    width: 476px;
+    margin-left: 787px;
+    height: 37px;
+    
+  }
+  
+  
+  
+  
+  .containerrr{
+    margin-top: 30px;
+    font-size: 22px;
+  }
+   
+  .card {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    margin: 20px;
+    overflow: hidden;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 20px;
+    
+  }
+  
+  .card-content h2 {
+    font-size: 44px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 27px;
+    margin: 0px;
+  }
+  
+  
+  #next-button{
+   
+    margin-left: 1500px;
+    width: 270px;
+    background-color: black;
+    color:  white;
+    height: 78px;
+  }
+  
+  #prev-button{
+    height: 78px;
+    width: 270px;
+    background-color: black;
+    color:  white;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+  }
+  
+  label {
+    margin-bottom: 40px;
+  }
+  
+  input {
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #e60f0f;
+    font-size: 19px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 46px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  
