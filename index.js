@@ -1,4 +1,4 @@
-
+ 
 let currentItemIndex = 0; // keep track of the current item index
 let items = []; // declare items array
 
@@ -113,6 +113,7 @@ function displayForm(item) {
   schoolLabel.textContent = 'school:';
   const schoolInput = document.createElement('input');
   schoolInput.type = 'text';
+  schoolInput.name = 'school';
   schoolLabel.appendChild(schoolInput);
   form.appendChild(schoolLabel);
 
@@ -120,6 +121,7 @@ function displayForm(item) {
   nameLabel.textContent = 'Name:';
   const nameInput = document.createElement('input');
   nameInput.type = 'text';
+  nameInput.name = 'name';
   nameLabel.appendChild(nameInput);
   form.appendChild(nameLabel);
 
@@ -127,6 +129,7 @@ function displayForm(item) {
   phoneLabel.textContent = 'Phone Number:';
   const phoneInput = document.createElement('input');
   phoneInput.type = 'tel';
+  phoneInput.name = 'phone';
   phoneLabel.appendChild(phoneInput);
   form.appendChild(phoneLabel);
 
@@ -134,6 +137,7 @@ function displayForm(item) {
   emailLabel.textContent = 'Email:';
   const emailInput = document.createElement('input');
   emailInput.type = 'email';
+  emailInput.name = 'email';
   emailLabel.appendChild(emailInput);
   form.appendChild(emailLabel);
 
@@ -141,11 +145,16 @@ function displayForm(item) {
   submitButton.type = 'submit';
   submitButton.textContent = 'Submit';
   submitButton.addEventListener('click', (event) => {
-    event.preventDefault();
+     
+    const formData = new FormData(form);
+    const formValues = Object.fromEntries(formData.entries());
     // handle form submission here
-    console.log(`Submitted form for item "${item.title}"`);
+    console.log(`Submitted form for item "${item.title}":`, formValues);
   });
   form.appendChild(submitButton);
 
   container.appendChild(form);
 }
+
+
+
