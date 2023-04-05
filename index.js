@@ -92,7 +92,7 @@ function displayItem(item) {
 
   // Add button to display form
   const formButton = document.createElement('button');
-  formButton.textContent = 'Contact Us';
+  formButton.textContent = 'SIGN UP FOR A SCHOOL ';
   formButton.addEventListener('click', () => {
     displayForm(item);
   });
@@ -172,7 +172,7 @@ function showSlides1() {
   slideIndex1++;
   if (slideIndex1 > slides.length) {slideIndex1 = 1}
   slides[slideIndex1-1].style.display = "block";
-  setTimeout(showSlides1, 4000); // Change image every 2 seconds
+  setTimeout(showSlides1, 6000); // Change image every 2 seconds
 }
 
 // Slideshow 2
