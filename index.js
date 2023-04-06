@@ -102,6 +102,8 @@ function displayItem(item) {
 
   container.appendChild(card);
 }
+
+
 function displayForm(item) {
   const container = document.getElementById('containerrr');
   container.innerHTML = '';
