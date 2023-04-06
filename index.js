@@ -102,10 +102,9 @@ function displayItem(item) {
 
   container.appendChild(card);
 }
-
 function displayForm(item) {
   const container = document.getElementById('containerrr');
-  container.innerHTML = '';  
+  container.innerHTML = '';
 
   const form = document.createElement('form');
 
@@ -145,17 +144,34 @@ function displayForm(item) {
   submitButton.type = 'submit';
   submitButton.textContent = 'Submit';
   submitButton.addEventListener('click', (event) => {
-     
+    event.preventDefault(); // prevent form from submitting
+
     const formData = new FormData(form);
     const formValues = Object.fromEntries(formData.entries());
-    // handle form submission here
-    console.log(`Submitted form for item "${item.title}":`, formValues);
-  });
-  form.appendChild(submitButton);
 
+    console.log(`Submitted form for item "${item.title}":`, formValues);
+
+    const message = document.createElement('p');
+    message.textContent = 'Thanks for signing up!';
+    message.style.backgroundColor = 'green';
+    message.style.color = 'white';
+    message.style.padding = '10px';
+    message.style.textAlign = 'center';
+    message.style.fontSize = '1.2rem';
+    container.appendChild(message);
+    form.style.display = 'none';
+    
+
+    // setTimeout(() => {
+    //   message.remove();
+    //   form.style.display = 'block';
+    // }, 5000);
+  });
+
+  form.appendChild(submitButton);
   container.appendChild(form);
 }
-   
+
 
 
 

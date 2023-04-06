@@ -325,6 +325,7 @@ li {
   background-color: black;
   color:  white;
   height: 78px;
+  border-radius: 59px;
 }
 
 #prev-button{
@@ -332,6 +333,8 @@ li {
   width: 270px;
   background-color: black;
   color:  white;
+  border-radius: 59px;
+  margin-left: 19px;
 }
 
 
