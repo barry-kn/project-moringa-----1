@@ -103,7 +103,6 @@ function displayItem(item) {
   container.appendChild(card);
 }
 
-
 function displayForm(item) {
   const container = document.getElementById('containerrr');
   container.innerHTML = '';
@@ -111,7 +110,7 @@ function displayForm(item) {
   const form = document.createElement('form');
 
   const schoolLabel = document.createElement('label');
-  schoolLabel.textContent = 'school:';
+  schoolLabel.textContent = 'School:';
   const schoolInput = document.createElement('input');
   schoolInput.type = 'text';
   schoolInput.name = 'school';
@@ -146,23 +145,25 @@ function displayForm(item) {
   submitButton.type = 'submit';
   submitButton.textContent = 'Submit';
   submitButton.addEventListener('click', (event) => {
-    event.preventDefault(); // prevent form from submitting
+    event.preventDefault();
 
     const formData = new FormData(form);
     const formValues = Object.fromEntries(formData.entries());
 
+    const schoolName = formValues.school;
+
     console.log(`Submitted form for item "${item.title}":`, formValues);
 
     const message = document.createElement('p');
-    message.textContent = 'Thanks for signing up!';
-    message.style.backgroundColor = 'green';
-    message.style.color = 'white';
-    message.style.padding = '10px';
-    message.style.textAlign = 'center';
-    message.style.fontSize = '1.2rem';
-    container.appendChild(message);
-    form.style.display = 'none';
-    
+message.textContent = `Thank you for submitting your information."${schoolName}" will get back to you soon through your email you provided `.toUpperCase();
+message.style.backgroundColor = 'green';
+message.style.color = 'white';
+message.style.padding = '10px';
+message.style.textAlign = 'center';
+message.style.fontSize = '1.2rem';
+container.appendChild(message);
+form.style.display = 'none';
+
 
     // setTimeout(() => {
     //   message.remove();
@@ -174,6 +175,7 @@ function displayForm(item) {
   container.appendChild(form);
 }
 
+ 
 
 
 
