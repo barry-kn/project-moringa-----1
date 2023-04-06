@@ -151,6 +151,10 @@ ol li {
   align-items: center;
   
 }
+#how{
+  margin-top: 1300px;
+  margin-right: 70px;
+}
 
 .how-section h2 {
   margin: 0;
@@ -253,7 +257,7 @@ li {
 .divh2{
   text-align: center;
   background-color: #a5f70c;
-  width: 476px;
+  width: 676px;
   margin-left: 587px;
   height: 37px;
   border-radius: 30px;
@@ -265,10 +269,14 @@ li {
 #Services{
   margin-top: 140px;
   margin-bottom: 26px;
+  
 }
+
+ 
 .containerrr{
   margin-top: 0px;
   font-size: 22px;
+
 }
  
 .card {
@@ -306,7 +314,10 @@ li {
   margin: 0px;
 }
 
-
+.move{
+  height: 200px;
+  
+}
 #next-button{
  
   margin-left: 900px;
